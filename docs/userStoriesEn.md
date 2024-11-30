@@ -82,7 +82,7 @@
 
 ### 4. Manage Tournament
 - **User Story:**
-    - As an administrator, I want to update tournament details.
+    - As an administrator, I want to manage tournaments.
 - **Acceptance Criteria:**
     - Access to a tournaments page is available.
     - View all tournaments.
@@ -92,11 +92,11 @@
 
 ### 1. Enter Tournament Scores
 - **User Story:**
-    - As a player, I want to enter my score and my flight members' scores for each hole.
+    - As a player, I want to enter a score for each hole.
 - **Acceptance Criteria:**
-    - Select a tournament and input scores for an active tournament.
+    - Select an active tournament and input my scores and my flight members' scores for each hole.
 
 - **User Story:**
     - As a player, I want to edit a submitted score.
 - **Acceptance Criteria:**
-    - The ability to edit scores for each hole before the round is finalized.
+    - The ability to edit my scores and my flight members' scores for each hole before the round is finalized.
