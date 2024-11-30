@@ -1,129 +1,115 @@
-### Use Case: View Tournaments (User)
+## Use Cases
 
-**Primary Actor:** User
+### User Use Cases
 
-**Preconditions:** None
+#### 1. View Tournaments
 
-**Trigger:** User navigates to the tournaments page.
-
-**Main Success Scenario:**
-1. User accesses the tournaments page.
-2. User views a list of all tournaments.
-3. User selects a particular tournament to view.
-4. User views participants in the selected tournament.
-5. User views players divided by groups within the tournament.
-6. User views scorecards of players.
-7. User views total scores and individual hole scores.
-
-### Use Case: View Leaderboard (User)
-
-**Primary Actor:** User
-
-**Preconditions:** None
-
-**Trigger:** User navigates to the leaderboard page.
+- **Primary Actor:** User
+- **Preconditions:** None
+- **Trigger:** User navigates to the tournaments page.
 
 **Main Success Scenario:**
-1. User accesses the leaderboard page for a tournament.
-2. User views the list of all players in the tournament.
-3. User views scorecards within the tournament.
-4. User sees real-time updates of scores, points, and rankings.
+1. Accesses the tournaments page.
+2. Views a list of all tournaments.
+3. Selects a tournament to view details:
+    - Views participants.
+    - Views players categorized by groups.
+    - Views scorecards.
+    - Views total scores and individual hole scores.
 
-### Use Case: Registration (User)
+#### 2. View Leaderboard
 
-**Primary Actor:** User
-
-**Preconditions:** None
-
-**Trigger:** User navigates to the registration page.
+- **Primary Actor:** User
+- **Preconditions:** None
+- **Trigger:** User navigates to the leaderboard page.
 
 **Main Success Scenario:**
-1. User accesses the registration page.
-2. User fills out the registration form.
-3. User submits registration information.
+1. Accesses the leaderboard page for a tournament.
+2. Views the list of all players in the tournament.
+3. Views scorecards.
+4. Sees real-time updates of scores, points, and rankings.
+
+#### 3. Registration
+
+- **Primary Actor:** User
+- **Preconditions:** None
+- **Trigger:** User navigates to the registration page.
+
+**Main Success Scenario:**
+1. Accesses the registration page.
+2. Completes the registration form.
+3. Submits registration information.
 4. System confirms registration and provides login credentials.
 
-### Use Case: Login (User)
+#### 4. Login
 
-**Primary Actor:** User
-
-**Preconditions:** User is registered.
-
-**Trigger:** User navigates to the login page.
+- **Primary Actor:** User
+- **Preconditions:** User is registered.
+- **Trigger:** User navigates to the login page.
 
 **Main Success Scenario:**
-1. User accesses the login page.
-2. User inputs valid credentials.
+1. Accesses the login page.
+2. Inputs valid credentials.
 3. System authenticates the user.
-4. User gains access to the application.
+4. Gains access to the application.
 
-### Use Case: View Players' Profiles (Administrator)
+### Administrator Use Cases
 
-**Primary Actor:** Administrator
+#### 5. View Players' Profiles
 
-**Preconditions:** Administrator is logged in.
-
-**Trigger:** Administrator navigates to the players' page.
-
-**Main Success Scenario:**
-1. Administrator accesses the players' page.
-2. Administrator views a list of all registered players.
-
-### Use Case: Manage Players' Profiles (Administrator)
-
-**Primary Actor:** Administrator
-
-**Preconditions:** Administrator is logged in.
-
-**Trigger:** Administrator navigates to the edit player page.
+- **Primary Actor:** Administrator
+- **Preconditions:** Administrator is logged in.
+- **Trigger:** Navigates to the players' page.
 
 **Main Success Scenario:**
-1. Administrator accesses the edit player page.
-2. Administrator adds a new player.
-3. Administrator edits a player's profile.
-4. Administrator removes a player.
+1. Accesses the players' page.
+2. Views a list of all registered players.
 
-### Use Case: Manage Players for Tournaments (Administrator)
+#### 6. Manage Players' Profiles
 
-**Primary Actor:** Administrator
-
-**Preconditions:** Administrator is logged in.
-
-**Trigger:** Administrator navigates to the edit tournament page.
+- **Primary Actor:** Administrator
+- **Preconditions:** Administrator is logged in.
+- **Trigger:** Navigates to the edit player page.
 
 **Main Success Scenario:**
-1. Administrator accesses the edit tournament page.
-2. Administrator adds players to a tournament.
-3. Administrator edits player details for a tournament.
-4. Administrator removes players from a tournament.
-5. Administrator manages players' scores and scorecards.
+1. Accesses the edit player page.
+2. Adds, edits, or removes players.
 
-### Use Case: Manage Tournament (Administrator)
+#### 7. Manage Players for Tournaments
 
-**Primary Actor:** Administrator
-
-**Preconditions:** Administrator is logged in.
-
-**Trigger:** Administrator navigates to the tournaments page.
+- **Primary Actor:** Administrator
+- **Preconditions:** Administrator is logged in.
+- **Trigger:** Navigates to the edit tournament page.
 
 **Main Success Scenario:**
-1. Administrator accesses the tournaments page.
-2. Administrator views all tournaments.
-3. Administrator adds a new tournament.
-4. Administrator edits tournament details.
-5. Administrator removes a tournament.
+1. Accesses the edit tournament page.
+2. Manages players in the tournament:
+    - Adds, edits, or removes players.
+    - Manages scores and scorecards.
 
-### Use Case: Enter Tournament Scores (Player)
+#### 8. Manage Tournament
 
-**Primary Actor:** Player
+- **Primary Actor:** Administrator
+- **Preconditions:** Administrator is logged in.
+- **Trigger:** Navigates to the tournaments page.
 
-**Preconditions:** Player is logged in and part of a tournament.
+**Main Success Scenario:**
+1. Accesses the tournaments page.
+2. Manages tournaments:
+    - Views all tournaments.
+    - Adds, edits, or removes tournaments.
 
-**Trigger:** Player participates in an active tournament.
+### Player Use Cases
 
-1. The player selects the active tournament.
-2. The player inputs a score for a hole.
-3. The player submits the score.
+#### 9. Enter Tournament Scores
+
+- **Primary Actor:** Player
+- **Preconditions:** Player is logged in and part of a tournament.
+- **Trigger:** Participates in an active tournament.
+
+**Main Success Scenario:**
+1. Selects the active tournament.
+2. Inputs and submits a score for a hole.
 
 **Extension:**
-- Player edits scores before the round is finalized.
+- Edits scores before the round is finalized.
