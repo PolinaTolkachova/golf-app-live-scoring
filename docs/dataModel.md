@@ -1,5 +1,15 @@
 # Data model
 
+
+[Entities and Attributes](#entities-and-attributes)
+- [User](#user)
+- [Administrator](#administrator)
+- [Player](#player)
+- [Tournament](#tournament)
+- [Leaderboard](#leaderboard)
+- [Scorecard](#scorecard)
+- [PlayerProfile](#playerprofile)
+
 ## Entities and Attributes
 
 ### User
