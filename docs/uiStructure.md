@@ -1,55 +1,88 @@
-### Overall Structure
+# UI Structure
 
-1. **Homepage**:
-    - Quick access buttons for "Player Login" and "Administrator Login".
-    - Navigation bar with links to main sections once logged in (e.g., Dashboard, Scorecard, Leaderboard).
+1. [Introduction](#introduction)
+2. [UI Components](#ui-components)
+    1. [Navigation Menu](#navigation-menu)
+    2. [User Interface](#user-interface)
+    3. [Administrator Interface](#administrator-interface)
+    4. [Player Interface](#player-interface)
+3. [Use Cases](#use-cases)
+    - [User Use Cases](#user-use-cases)
+    - [Administrator Use Cases](#administrator-use-cases)
+    - [Player Use Cases](#player-use-cases)
 
-2. **Player Dashboard**:
-    - Accessible after logging in.
-    - Display upcoming tournaments, recent activity, and quick links to enter scores or view scorecards.
+## UI Components
 
-3. **Administrator Dashboard**:
-    - Accessible after logging in.
-    - Display options for managing players, tournaments, and viewing leaderboards.
+### Navigation Menu
 
-### Detailed UI Pages
+- **Home**
+- **Tournaments**
+- **Leaderboard**
+- **Registration**
+- **Login**
+- **Player Profiles** (Admins only)
+- **Tournament Management** (Admins only)
 
-#### **Player Pages**
+### User Interface
 
-1. **Login Page**
-    - Fields for username/email and password.
-    - Login button.
-    - Error message area for displaying incorrect login attempts.
-    - "Forgot Password?" link.
+#### Tournaments Page
 
-2. **Active Tournament Page**
-    - List of active tournaments with select option.
-    - Button to navigate to score entry section.
+- **Components:**
+    - List of tournaments
+    - Tournament details (participants, groups, scorecards, total scores)
+- **Interactions:**
+    - Click on a tournament for details
 
-3. **Enter Tournament Scores**
-    - List of holes with input fields for scores.
-    - Submit button with confirmation pop-up upon success.
-    - Optional: graphical representation of holes (e.g., mini-golf course map).
+#### Leaderboard Page
 
-4. **View Scorecard**
-    - Display of total score and individual scores per hole.
-    - Real-time updates upon submission or edits.
+- **Components:**
+    - Table of players with scores, points, rankings
+- **Features:**
+    - Real-time update indicator
 
-5. **Edit Submitted Score**
-    - Interface to select holes and update scores.
-    - Save button, triggering a real-time update across the system.
+#### Registration Page
 
-#### **Administrator Pages**
+- **Components:**
+    - Registration form (name, email, password, etc.)
+    - Submit button
+- **Outcome:**
+    - Confirmation message with login credentials
 
-1. **Manage Player Registrations**
-    - List of registered players with options to add, edit, or remove.
-    - Form for adding new players.
-    - Interface to edit existing player details and scores.
+#### Login Page
 
-2. **Update Tournament Details**
-    - List of upcoming and current tournaments with edit/remove options.
-    - Form to add new tournaments or update existing ones.
+- **Components:**
+    - Login form (username, password)
+    - Submit button
+- **Outcome:**
+    - Redirects to home page upon successful login
 
-3. **Oversee Live Leaderboard**
-    - Real-time leaderboard display with sorting and filtering options.
-    - Detailed view for individual player performance.
+### Administrator Interface
+
+#### Players' Page
+
+- **Components:**
+    - List of registered players
+- **Features:**
+    - View player profiles
+
+#### Edit Player Page
+
+- **Components:**
+    - Player form (add, edit, remove fields)
+    - Action buttons (Save, Delete)
+
+#### Edit Tournament Page
+
+- **Components:**
+    - Tournament form (add, edit, remove fields)
+    - Player management section
+    - Scorecards section
+
+### Player Interface
+
+#### Enter Tournament Scores Page
+
+- **Components:**
+    - Select tournament dropdown
+    - Score entry fields for each hole
+    - Submit and Edit buttons
