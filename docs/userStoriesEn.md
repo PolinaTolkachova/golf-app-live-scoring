@@ -1,5 +1,20 @@
 # User Stories
 
+- [User Stories](#user-stories)
+    - [Roles](#roles)
+- [User Stories](#user-stories-1)
+    - [1. View Tournament](#1-view-tournament)
+    - [2. View Leaderboard](#2-view-leaderboard)
+    - [3. Login](#3-login)
+- [Administrator Stories](#administrator-stories)
+    - [1. View Players' Profiles](#1-view-players-profiles)
+    - [2. Manage Players' Profiles](#2-manage-players-profiles)
+    - [3. Manage Players](#3-manage-players)
+    - [4. Manage Tournament](#4-manage-tournament)
+- [Player Stories](#player-stories)
+    - [1. Enter Tournament Scores](#1-enter-tournament-scores)
+    - [2. Edit Score](#2-edit-score)
+
 ## Roles
 - **User:** An unauthorized user
 - **Administrator:** An authorized user with the role of Administrator
