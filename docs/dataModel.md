@@ -8,7 +8,6 @@
     - [Tournament](#tournament)
     - [Leaderboard](#leaderboard)
     - [Scorecard](#scorecard)
-    - [Player Profile](#player-profile)
 
 ## Entities and Attributes
 
