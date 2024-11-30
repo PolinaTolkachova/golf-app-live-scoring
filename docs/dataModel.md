@@ -18,7 +18,7 @@
     - `Username`: The login name used by the user.
     - `Password`: Hashed password for security.
     - `Email`: Contact email address.
-    - `Role`: User's role (e.g., regular user, admin, player).
+    - `Role`: User's role (regular user, admin, player).
 - **Relationships:**
     - Each User can be associated with one **Player Profile**.
 
@@ -34,6 +34,8 @@
     - `PlayerID`: Unique identifier for each player.
     - `UserID`: Foreign key linking to the **User** entity.
     - `TournamentIDs`: List of tournaments the player is involved in.
+    - `Gender`: Player’s gender (Female, Male).
+    - `Handicap`: Player's handicap.
 - **Relationships:**
     - Players can participate in multiple **Tournaments**.
     - Each Player has one **Scorecard** per **Tournament**.
@@ -46,7 +48,7 @@
     - `FinishDate`: Finish date of the tournament.
     - `Players`: List of **PlayerIDs** participating.
     - `Format`: Format of the tournament (e.g., Individual, Team).
-    - `Group`: Player group categories (e.g.,Men HCP0-12, Men HCP 12.1-24, Men HCP 24.1-36, Women HCP 0-24, Women HCP 24.1-36).
+    - `Group`: Player group categories (e.g., Men HCP0-12, Men HCP 12.1-24, Men HCP 24.1-36, Women HCP 0-24, Women HCP 24.1-36).
     - `ScoringType`: Scoring type used for calculating results (e.g., Stableford, Stroke Net).
 - **Relationships:**
     - A Tournament can include numerous **Players**.
@@ -65,18 +67,7 @@
     - `PlayerIDs`: List of foreign keys linking to a **Player**.
     - `TournamentID`: Foreign key linking to a **Tournament**.
     - `Scores`: List of scores per hole.
-    - `TotalScore`: Cumulative total score for the player.
+    - `TotalScore`: Total score for the player.
 - **Relationships:**
     - Each Scorecard is associated with one **Player** or one **Team**.
     - Each Scorecard is linked to a specific **Tournament**.
-
-### Player Profile
-- **Attributes:**
-    - `ProfileID`: Unique identifier for each player profile.
-    - `PlayerID`: Foreign key linking to the **Player** entity.
-    - `Name`: Player's first name.
-    - `Surname`: Player's last name.
-    - `Gender`: Player’s gender (Female, Male).
-    - `Handicap`: Player's handicap.
-- **Relationships:**
-    - Each Player is linked to one **Player Profile**.

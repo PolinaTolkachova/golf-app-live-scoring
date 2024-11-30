@@ -23,7 +23,7 @@
 ## 1. Client-Side (Frontend) Application
 
 ### Purpose
-- Provide a user interface to display results, input scores, and manage player profiles.
+- Provide a user interface to display results, input scores, manage player profiles, etc.
 
 ### Technologies
 - **React.js**: Used for building a responsive and dynamic user interface.
@@ -33,7 +33,7 @@
 ### Purpose
 - Handle business logic.
 - Process requests and interact with the database.
-- Manage real-time updates.
+- Interact with Frontend application.
 
 ### Technologies
 - **Spring Boot**: A Java framework for building production-ready services.
@@ -43,7 +43,7 @@
 ## 3. Database
 
 ### Purpose
-- Serve as persistent storage for player information, scores, and tournament details.
+- Serve as persistent storage for player information, scores, tournament details, etc.
 
 ### Technologies
 - **PostgreSQL**: A relational database designed for structured data.
