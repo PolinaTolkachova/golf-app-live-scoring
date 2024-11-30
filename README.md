@@ -8,15 +8,13 @@
 - [License](#license)
 
 ## Overview
-The **Live Scoring Golf Application** enables users to engage with golf tournaments through comprehensive features including tournament viewing, leaderboard tracking, user registration, and player score management.
+The **Live Scoring Golf Application** allows users to view tournaments, check leaderboards, manage player scores, etc.
 
 ## Features
-- **View Tournaments:** Stay updated with details of upcoming and ongoing tournaments.
-- **Real-time Leaderboards:** Access dynamic and live score tracking for player rankings in each tournament.
-- **Registration & Login:** Effortless user management through streamlined registration and login processes.
-- **Player Management:** Administrators can manage player profiles by adding new players, editing existing ones, and organizing players within tournament groups.
-- **Tournament Management:** Utilize administrative tools to create, modify, and manage tournaments.
-- **Interactive Scorecards:** Players can update scores per hole, ensuring visibility and accuracy for all participants.
+- **Tournaments:** See details of current and upcoming tournaments.
+- **Leaderboards:** Get live updates on player rankings in real-time.
+- **Player Profiles:** Admins can add, edit, and organize player profiles and groups for tournaments.
+- **Score:** Players can enter scores for holes during tournaments.
 
 ## Installation
 To set up the Live Scoring Golf Application, perform the following steps:
