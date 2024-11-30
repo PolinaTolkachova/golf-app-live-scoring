@@ -1,41 +1,48 @@
-# Project Name: Live Scoring Golf Application
+# Live Scoring Golf Application
+
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
 
 ## Overview
+The **Live Scoring Golf Application** enables users to engage with golf tournaments through comprehensive features including tournament viewing, leaderboard tracking, user registration, and player score management.
 
-The Live Scoring Golf Application is designed to allow users to view tournaments, monitor leaderboards, register for tournaments, and manage player profiles and scores. This app offers a range of functionalities:
-
-- **View Tournaments:** Stay informed about upcoming and ongoing golf tournaments.
-- **Real-time Leaderboards:** Keep track of player progress with live leaderboards that reflect real-time scores and rankings within each tournament.
-- **Registration & Login:** Provides users with the ability to register and log in, offering seamless access management.
-- **Player Management:** Administrators can efficiently manage player profiles, including adding new players, editing existing profiles, and organizing players into tournament groups.
-- **Tournament Management:** Create, edit, and oversee tournaments with comprehensive administrative tools.
-- **Interactive Scorecards:** Players can input scores for each hole and edit them as necessary, fostering a transparent environment for all participants.
+## Features
+- **View Tournaments:** Stay updated with details of upcoming and ongoing tournaments.
+- **Real-time Leaderboards:** Access dynamic and live score tracking for player rankings in each tournament.
+- **Registration & Login:** Effortless user management through streamlined registration and login processes.
+- **Player Management:** Administrators can manage player profiles by adding new players, editing existing ones, and organizing players within tournament groups.
+- **Tournament Management:** Utilize administrative tools to create, modify, and manage tournaments.
+- **Interactive Scorecards:** Players can update scores per hole, ensuring visibility and accuracy for all participants.
 
 ## Installation
-
-To install the Live Scoring Golf Application, follow these steps:
+To set up the Live Scoring Golf Application, perform the following steps:
 
 1. Clone the repository from GitHub:
    ```bash
-   git clone https://github.com/your-repo/live-storing-golf-app.git
+   git clone https://github.com/your-repo/live-scoring-golf-app.git
    ```
+
 2. Navigate to the project directory:
    ```bash
-   cd live-storing-golf-app
+   cd live-scoring-golf-app
    ```
-3. Install the required dependencies:
+
+3. Install the necessary dependencies:
    ```bash
    npm install
    ```
 
 ## Usage
-
-1. Start the development server:
+1. Launch the development server:
    ```bash
    npm start
    ```
-2. Open your web browser and visit `http://localhost:3000` to access the application.
+
+2. Open your web browser and go to `http://localhost:3000` to use the application.
 
 ## License
-
-This project is licensed under the [BSD 3-Clause](LICENSE).
+This project is licensed under the [BSD 3-Clause License](LICENSE).
