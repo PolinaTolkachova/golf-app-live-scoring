@@ -13,7 +13,7 @@
 4. User views participants in the selected tournament.
 5. User views players divided by groups within the tournament.
 6. User views scorecards of players.
-7. User sees total scores and individual hole scores.
+7. User views total scores and individual hole scores.
 
 ### Use Case: View Leaderboard (User)
 
@@ -121,11 +121,9 @@
 
 **Trigger:** Player participates in an active tournament.
 
-**Main Success Scenario:**
-1. Player selects the active tournament.
-2. Player inputs scores for each hole.
-3. Player inputs flight members' scores for each hole.
-4. Player submits scores for review.
+1. The player selects the active tournament.
+2. The player inputs a score for a hole.
+3. The player submits the score.
 
 **Extension:**
 - Player edits scores before the round is finalized.

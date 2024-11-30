@@ -1,12 +1,12 @@
 # Project Document: High-Level Architecture Overview
 
-## 1. Client-Side (Frontend)
+## 1. Client-Side (Frontend) application
 - **Purpose:**
     - User interface to display results, input scores, and manage player profiles.
 - **Technologies:**
     - **React.js:** For building a responsive and dynamic user interface.
 
-## 2. Server-Side (Backend)
+## 2. Server-Side (Backend) application
 - **Purpose:**
     - Handle business logic, process requests, interact with the database, and manage real-time updates.
 - **Technologies:**
