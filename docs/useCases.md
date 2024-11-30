@@ -1,5 +1,19 @@
 ## Use Cases
 
+1. [Use Cases](#use-cases)
+    - [User Use Cases](#user-use-cases)
+        - [1. View Tournaments](#1-view-tournaments)
+        - [2. View Leaderboard](#2-view-leaderboard)
+        - [3. Registration](#3-registration)
+        - [4. Login](#4-login)
+    - [Administrator Use Cases](#administrator-use-cases)
+        - [5. View Players' Profiles](#5-view-players-profiles)
+        - [6. Manage Players' Profiles](#6-manage-players-profiles)
+        - [7. Manage Players for Tournaments](#7-manage-players-for-tournaments)
+        - [8. Manage Tournament](#8-manage-tournament)
+    - [Player Use Cases](#player-use-cases)
+        - [9. Enter Tournament Scores](#9-enter-tournament-scores)
+
 ### User Use Cases
 
 #### 1. View Tournaments
