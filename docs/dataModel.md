@@ -1,91 +1,77 @@
 # Data model
 
-## Key Entities and Attributes
+## Entities and Attributes
 
-### 1. User
+### User
+
 - **Attributes:**
-    - UserID (Primary Key)
-    - Username
-    - PasswordHash
-    - Email
-    - Role (Player, Administrator)
-    - RegisteredDate
+    - `UserID`: Unique identifier for the user.
+    - `Username`: Login name of the user.
+    - `Password`: User's password (hashed).
+    - `Email`: User's email address.
+    - `Role`: Specifies if the user is a regular user, admin, or player.
+- **Relationships:**
+    - One User can be associated with one PlayerProfile.
 
-### 2. Player
+### Administrator
+
 - **Attributes:**
-    - PlayerID (Primary Key, Foreign Key from User)
-    - Name
-    - Handicap
-    - Sex
-    - Email
-    - Phone
-    - Picture
+    - `AdminID`: Unique identifier for the administrator.
+    - `UserID`: Foreign key linking to User entity.
+- **Relationships:**
+    - One Administrator can manage multiple players and tournaments.
 
-### 3. Tournament
+### Player
+
 - **Attributes:**
-    - TournamentID (Primary Key)
-    - Name
-    - StartDate
-    - EndDate
-    - Description
+    - `PlayerID`: Unique identifier for the player.
+    - `UserID`: Foreign key linking to User entity.
+    - `TournamentIDs`: List of tournaments the player is part of.
+- **Relationships:**
+    - Many Players can participate in many Tournaments.
+    - One Player has one Scorecard per Tournament.
 
-### 4. Course
+### Tournament
+
 - **Attributes:**
-    - CourseID (Primary Key)
-    - Name
-    - Location
+    - `TournamentID`: Unique identifier for the tournament.
+    - `Name`: Name of the tournament.
+    - `Date`: Scheduled date for the tournament.
+    - `Location`: Physical or virtual location of the tournament.
+    - `Players`: List of PlayerIDs participating.
+- **Relationships:**
+    - One Tournament has many Players.
+    - One Tournament is featured on one Leaderboard.
+    - One Tournament can have multiple Scorecards.
 
-### 5. Hole
+### Leaderboard
+
 - **Attributes:**
-    - HoleID (Primary Key)
-    - HoleNumber
-    - Par
-    - Stroke Index
-    - Tees
+    - `LeaderboardID`: Unique identifier for the leaderboard.
+    - `TournamentID`: Foreign key linking to Tournament entity.
+    - `Scores`: Mapping of PlayerID to their scores and points.
+- **Relationships:**
+    - One Leaderboard belongs to one Tournament.
 
-### 6. Tee
+### Scorecard
+
 - **Attributes:**
-    - Color
-    - Length
+    - `ScorecardID`: Unique identifier for the scorecard.
+    - `PlayerID`: Foreign key linking to Player entity.
+    - `TournamentID`: Foreign key linking to Tournament entity.
+    - `Scores`: List of scores per hole.
+    - `TotalScore`: Calculated total score.
+- **Relationships:**
+    - One Scorecard belongs to one Player.
+    - One Scorecard is associated with one Tournament.
 
-### 7. Score
+### PlayerProfile
+
 - **Attributes:**
-    - ScoreID (Primary Key)
-    - PlayerID (Foreign Key)
-    - TournamentID (Foreign Key)
-    - HoleID (Foreign Key)
-    - ScoreValue
-    - Timestamp
-
-### 8. Leaderboard
-- **Attributes:**
-    - LeaderboardID (Primary Key)
-    - TournamentID (Foreign Key)
-    - PlayerID (Foreign Key)
-    - Rank
-
-## Relationships
-
-- **User to Player:** One-to-One
-    - A user may have a single player profile.
-
-- **Tournament to Course:** One-to-One
-    - Each tournament is conducted on one course.
-
-- **Course to Hole:** One-to-Many
-    - Each course consists of multiple holes.
-
-- **Tournament to Score:** One-to-Many
-    - Each tournament has multiple scores, one per hole for each player.
-
-- **Player to Score:** One-to-Many
-    - Players can have multiple scores, one per hole during tournaments.
-
-- **Hole to Score:** One-to-Many
-    - Each hole can have multiple scores, one per player.
-
-- **Tournament to Leaderboard:** One-to-One
-    - Each tournament has one leaderboard.
-
-- **Player to Leaderboard:** Many-to-One
-    - Each player appears once in each tournament's leaderboard.
+    - `ProfileID`: Unique identifier for the player profile.
+    - `PlayerID`: Foreign key linking to Player entity.
+    - `Name`: Full name of the player.
+    - `Age`: Age of the player.
+    - `Handicap`: Player's handicap score.
+- **Relationships:**
+    - One Player has one PlayerProfile.
