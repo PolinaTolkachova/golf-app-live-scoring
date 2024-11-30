@@ -16,7 +16,7 @@ Player - an authorized user with a role of Player
     - Users can view all tournaments.
     - Users can view a particular tournament.
     - Users can view all players took part in a particular tournament.
-    - Users can view players took part in a tournament devided by tournament groups.
+    - Users can view players divided by tournament groups.
     - Users can view players' scorecards.
     - Users can view players' total scores and the score for each hole in a particular scorecard.
 
@@ -25,22 +25,11 @@ Player - an authorized user with a role of Player
 - **User Story:** As a user, I want to see the leaderboard so that I can monitor players' scores and progress.
 - **Acceptance Criteria:**
     - Users can view a leaderboard page for each tournament.
-    - Users can view all players on a leaderboars took par in a particualar tournament.
-    - Users can view players' scorecards within a particular tournament.
-    - Users can view changes in the leaderbord in live within an actual tournament.
-    - Users can view real time update on the leaderboard related players' actual scores, number of hits and rates.
-
-### Story 3: View Leaderboard
-
-- **User Story:** As a user, I want to see the leaderboard so that I can monitor players' scores and progress.
-- **Acceptance Criteria:**
-    - Users can view a leaderboard page for each tournament.
-    - User can view all players on a leaderboars took par in a particualar tournament.
-    - User can view players' scorecards within a particular tournament.
-    - Users can view changes in the leaderbord in live within an actual tournament.
-    - User can view real time update on the leaderboard related players' actual scores, number of hits and rates.
+    - Users can view all players on a leaderboard took part in a tournament.
+    - Users can view players' scorecards within a tournament.
+    - Users can view real-time update on the leaderboard related players' actual scores, number of hits and rates within an actual tournament.
   
-### Story 4: Login
+### Story 3: Login
 
 - **User Story:** As a user, I want to log in to the application to have ability enter and edit score
 - **Acceptance Criteria:**
@@ -84,10 +73,9 @@ Player - an authorized user with a role of Player
 
 ### Story 1: Enter Tournament Scores
 
-- **User Story:** As a player, I want to select a tournament and enter my score and my flight memebers' score for each hole.
+- **User Story:** As a player, I want to select a tournament and enter my score and my flight members' score for each hole.
 - **Acceptance Criteria:**
-    - Players can select a hole for an active tournament after succesfull login and input their score and their flight memebers' score.
-    - Players receive confirmation upon successful score submission.
+    - Players can select a hole and input their score and their flight members' score for an active tournament.
 
 ### Story 2: Edit Score
 
