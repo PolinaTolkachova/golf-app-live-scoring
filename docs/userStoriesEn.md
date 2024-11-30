@@ -3,7 +3,7 @@
 - [User Stories](#user-stories)
     - [Roles](#roles)
 - [User Stories](#user-stories-1)
-    - [1. View Tournament](#1-view-tournament)
+    - [1. View Tournaments](#1-view-tournaments)
     - [2. View Leaderboard](#2-view-leaderboard)
     - [3. Login](#3-login)
 - [Administrator Stories](#administrator-stories)
@@ -22,7 +22,7 @@
 
 ## User Stories
 
-### 1. View Tournament
+### 1. View Tournaments
 - **User Story:**
     - As a user, I want to see tournaments.
 - **Acceptance Criteria:**
@@ -41,15 +41,20 @@
     - Access to a leaderboard page for each tournament.
     - View all players who participated in a tournament on the leaderboard.
     - View players' scorecards within a tournament.
-    - View real-time updates including actual scores, hits, and rates.
+    - View real-time updates including score, points and leaderboard rankings.
+
+### 2. Registration
+- **User Story:**
+    - As a user, I want to register so that I can enter and edit scores.
+- **Acceptance Criteria:**
+    - Access to a registration page is available.
 
 ### 3. Login
 - **User Story:**
-    - As a user, I want to log in to enter and edit scores.
+    - As a user, I want to log into the application.
 - **Acceptance Criteria:**
     - Access to a login page is available.
-    - Input valid credentials to gain access.
-    - Receive an error message for incorrect credentials.
+    - The ability to input valid credentials to gain access.
 
 ## Administrator Stories
 
@@ -91,8 +96,7 @@
 - **Acceptance Criteria:**
     - Select a tournament and input scores for an active tournament.
 
-### 2. Edit Score
 - **User Story:**
-    - As a player, I want to edit a submitted score within a specified time frame.
+    - As a player, I want to edit a submitted score.
 - **Acceptance Criteria:**
-    - Edit scores for a hole before the round is finalized.
+    - The ability to edit scores for each hole before the round is finalized.
