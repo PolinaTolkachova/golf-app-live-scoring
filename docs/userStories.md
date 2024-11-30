@@ -1,21 +1,27 @@
 # User Stories
 
+## Story 1: View Tournament
+
+- **User Story:** As a user, I want to see tournaments
+- **Acceptance Criteria:**
+    - User have access a tournaments page.
+    - User can see all tournaments and a particular tournament.
+    - User can see all players took part in a particular tournament.
+    - User see players took part in a tournament devided by tournament groups.
+  
 ## Story 1: Login
 
-- **User Story:** As a player or administrator, I want to log in to the application.
+- **User Story:** As a user, I want to log in to the application to have ability enter and edit score
 - **Acceptance Criteria:**
-    - Players and administrators can access a login page.
-    - Players and administrators can input valid credentials to gain access.
-    - Players and administrators receive an error message upon entering incorrect credentials.
+    - User can access a login page.
+    - User can input valid credentials to gain access.
+    - User receive an error message upon entering incorrect credentials.
 
 ## Story 2: Enter Tournament Scores
 
-- **User Story:** As a player, I want to select a tournament and enter my score for each hole.
+- **User Story:** As a player, I want to select a tournament and enter my score and my flight memebers' score for each hole.
 - **Acceptance Criteria:**
-    - Players can access a tournaments page.
-    - Players can see all tournaments.
-    - Players can navigate to the active tournament page.
-    - Players can select a hole and input their score.
+    - Players can select a hole for an active tournament after succesfull login and input their score and their flight memebers' score
     - Players receive confirmation upon successful score submission.
 
 ## Story 3: View Scorecard
@@ -68,3 +74,11 @@
 - **Acceptance Criteria:**
     - Players and administrators can access a leaderboard page.
     - Players and administrators can view the leaderboard displaying all players' scorecards within a particular tournament.
+    - view and change the leaderbord in live
+
+## Story 9: View live tournament result
+
+- **User Story:** As a user, I want to see the live tournament result so that I can monitor players' scores and actual tournament leaders.
+- **Acceptance Criteria:**
+    - Users can view the players of the current tournament filtered by results
+    - Users can view players' actual scores, number of hits and scorecards
