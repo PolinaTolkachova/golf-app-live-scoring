@@ -29,7 +29,7 @@
 
 - **Components:**
     - List of tournaments
-    - Tournament details (participants, groups, scorecards, total scores)
+    - Tournament details (participants, groups, scorecards, etc.)
 - **Interactions:**
     - Click on a tournament for details
 
@@ -38,7 +38,7 @@
 - **Components:**
     - Table of players with scores, points, rankings
 - **Features:**
-    - Real-time update indicator
+    - Real-time updating
 
 #### Registration Page
 
@@ -46,7 +46,7 @@
     - Registration form (name, email, password, etc.)
     - Submit button
 - **Outcome:**
-    - Confirmation message with login credentials
+    - Confirmation message
 
 #### Login Page
 
@@ -61,7 +61,7 @@
 #### Players' Page
 
 - **Components:**
-    - List of registered players
+    - List of players
 - **Features:**
     - View player profiles
 
@@ -83,6 +83,5 @@
 #### Enter Tournament Scores Page
 
 - **Components:**
-    - Select tournament dropdown
-    - Score entry fields for each hole
+    - Score entry fields for each hole fora a particular tournament
     - Submit and Edit buttons

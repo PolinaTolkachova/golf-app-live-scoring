@@ -9,8 +9,8 @@
     - [Administrator Use Cases](#administrator-use-cases)
         - [5. View Players' Profiles](#5-view-players-profiles)
         - [6. Manage Players' Profiles](#6-manage-players-profiles)
-        - [7. Manage Players for Tournaments](#7-manage-players-for-tournaments)
-        - [8. Manage Tournament](#8-manage-tournament)
+        - [7. Manage Tournament](#7-manage-tournament)
+        - [8. Manage Players for Tournaments](#8-manage-players-for-tournaments)
     - [Player Use Cases](#player-use-cases)
         - [9. Enter Tournament Scores](#9-enter-tournament-scores)
 
@@ -29,7 +29,7 @@
     - Views participants.
     - Views players categorized by groups.
     - Views scorecards.
-    - Views total scores and individual hole scores.
+    - Views total scores and individual hole scores for a particular player.
 
 #### 2. View Leaderboard
 
@@ -53,7 +53,7 @@
 1. Accesses the registration page.
 2. Completes the registration form.
 3. Submits registration information.
-4. System confirms registration and provides login credentials.
+4. System confirms registration.
 
 #### 4. Login
 
@@ -89,19 +89,7 @@
 1. Accesses the edit player page.
 2. Adds, edits, or removes players.
 
-#### 7. Manage Players for Tournaments
-
-- **Primary Actor:** Administrator
-- **Preconditions:** Administrator is logged in.
-- **Trigger:** Navigates to the edit tournament page.
-
-**Main Success Scenario:**
-1. Accesses the edit tournament page.
-2. Manages players in the tournament:
-    - Adds, edits, or removes players.
-    - Manages scores and scorecards.
-
-#### 8. Manage Tournament
+#### 7. Manage Tournament
 
 - **Primary Actor:** Administrator
 - **Preconditions:** Administrator is logged in.
@@ -113,6 +101,20 @@
     - Views all tournaments.
     - Adds, edits, or removes tournaments.
 
+#### 8. Manage Players for Tournaments
+
+- **Primary Actor:** Administrator
+- **Preconditions:** Administrator is logged in.
+- **Trigger:** Navigates to the edit tournament page.
+
+**Main Success Scenario:**
+1. Accesses the edit tournament page.
+2. Manages players in the tournament:
+    - Adds, edits, or removes players.
+    - Manages scores and scorecards.
+
+
+
 ### Player Use Cases
 
 #### 9. Enter Tournament Scores
@@ -123,7 +125,7 @@
 
 **Main Success Scenario:**
 1. Selects the active tournament.
-2. Inputs and submits a score for a hole.
+2. Input and submit scores for themselves and their flight members for a hole.
 
 **Extension:**
 - Edits scores before the round is finalized.
