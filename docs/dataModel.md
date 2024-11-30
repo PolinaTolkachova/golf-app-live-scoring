@@ -1,7 +1,6 @@
 # Data Model
 
 ## Table of Contents
-
 - [Entities and Attributes](#entities-and-attributes)
     - [User](#user)
     - [Administrator](#administrator)
@@ -9,89 +8,75 @@
     - [Tournament](#tournament)
     - [Leaderboard](#leaderboard)
     - [Scorecard](#scorecard)
-    - [PlayerProfile](#playerprofile)
+    - [Player Profile](#player-profile)
 
 ## Entities and Attributes
 
 ### User
-
 - **Attributes:**
     - `UserID`: Unique identifier for each user.
     - `Username`: The login name used by the user.
     - `Password`: Hashed password for security.
-    - `Email`: Contact email address of the user.
-    - `Role`: Designates the user's role (regular user, admin, or player).
-
+    - `Email`: Contact email address.
+    - `Role`: User's role (e.g., regular user, admin, player).
 - **Relationships:**
-    - Each User can have one associated PlayerProfile.
+    - Each User can be associated with one **Player Profile**.
 
 ### Administrator
-
 - **Attributes:**
-    - `AdminID`: Unique identifier for administrators.
-    - `UserID`: Foreign key which links to the User entity.
-
+    - `AdminID`: Unique identifier for each administrator.
+    - `UserID`: Foreign key linking to the **User** entity.
 - **Relationships:**
-    - An Administrator can manage several players and tournaments.
+    - An Administrator can manage multiple **Players** and **Tournaments**.
 
 ### Player
-
 - **Attributes:**
     - `PlayerID`: Unique identifier for each player.
-    - `UserID`: Foreign key linking to the User entity.
-    - `TournamentIDs`: List indicating the tournaments the player is involved in.
-
+    - `UserID`: Foreign key linking to the **User** entity.
+    - `TournamentIDs`: List of tournaments the player is involved in.
 - **Relationships:**
-    - Many Players can participate in multiple Tournaments.
-    - Each Player has one Scorecard per Tournament.
+    - Players can participate in multiple **Tournaments**.
+    - Each Player has one **Scorecard** per **Tournament**.
 
 ### Tournament
-
 - **Attributes:**
     - `TournamentID`: Unique identifier for each tournament.
-    - `Name`: Tournament name.
-    - `Start date`: Date on which the tournament is started.
-    - `Finish date`: Date on which the tournament is finished.
-    - `Players`: List of PlayerIDs who are participating.
-    - `Format`: Format of the tournament (Individual, Team).
-    - `Group`: Players group (Men HCP0-12, Men HCP 12.1-24, Men HCP 24.1-36, Women HCP 0-24, Women HCP 24.1-36).
-    - `Scoring type`: Scoring type for calculation the tournament results. 
-
+    - `Name`: Name of the tournament.
+    - `StartDate`: Start date of the tournament.
+    - `FinishDate`: Finish date of the tournament.
+    - `Players`: List of **PlayerIDs** participating.
+    - `Format`: Format of the tournament (e.g., Individual, Team).
+    - `Group`: Player group categories (e.g.,Men HCP0-12, Men HCP 12.1-24, Men HCP 24.1-36, Women HCP 0-24, Women HCP 24.1-36).
+    - `ScoringType`: Scoring type used for calculating results (e.g., Stableford, Stroke Net).
 - **Relationships:**
-    - A Tournament can have many Players.
-    - Each Tournament is reflected on one Leaderboard.
+    - A Tournament can include numerous **Players**.
+    - Each Tournament is represented on one **Leaderboard**.
 
 ### Leaderboard
-
 - **Attributes:**
     - `LeaderboardID`: Unique identifier for each leaderboard.
-    - `TournamentID`: Foreign key linking to the Tournament entity.
-
+    - `TournamentID`: Foreign key linking to the **Tournament** entity.
 - **Relationships:**
-    - Every Leaderboard belongs to one specific Tournament.
+    - Each Leaderboard belongs to a specific **Tournament**.
 
 ### Scorecard
-
 - **Attributes:**
     - `ScorecardID`: Unique identifier for each scorecard.
-    - `PlayerIDs`: List of foreign keys linking to the Player entities. 
-    - `TournamentID`: Foreign key linking to the Tournament entity.
+    - `PlayerIDs`: List of foreign keys linking to a **Player**.
+    - `TournamentID`: Foreign key linking to a **Tournament**.
     - `Scores`: List of scores per hole.
     - `TotalScore`: Cumulative total score for the player.
-
 - **Relationships:**
-    - Each Scorecard is associated with one Player or one Team.
-    - Each Scorecard is tied to one specific Tournament.
+    - Each Scorecard is associated with one **Player** or one **Team**.
+    - Each Scorecard is linked to a specific **Tournament**.
 
-### PlayerProfile
-
+### Player Profile
 - **Attributes:**
     - `ProfileID`: Unique identifier for each player profile.
-    - `PlayerID`: Foreign key linking to the Player entity.
-    - `Name`: Player's name.
-    - `Surname`: Player's surname.
+    - `PlayerID`: Foreign key linking to the **Player** entity.
+    - `Name`: Player's first name.
+    - `Surname`: Player's last name.
     - `Gender`: Player’s gender (Female, Male).
     - `Handicap`: Player's handicap.
-
 - **Relationships:**
-    - Each Player is linked to one PlayerProfile.
+    - Each Player is linked to one **Player Profile**.
